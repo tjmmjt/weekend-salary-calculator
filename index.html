@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="style.css">
+  <script defer src="client.js"></script>
   <title>Salary Calculator</title>
 </head>
 <body>
@@ -10,11 +11,64 @@
     <h1>Salary Calculator</h1>
   </header>
   <main>
-    <h2>Add Employee</h2>
-    <h2>Employees</h2>
-  </main>
-  <footer>
-    <p>Total Monthly</p>
-  </footer>
+    <!-- container for styling -->
+    <div class="container">
+      <h2>Add Employee</h2>
+        <!-- employee input form -->
+        <form action="">
+          <input id="firstName" placeholder="First Name" type="text">
+          <input id="lastName" placeholder="Last Name" type="text">
+          <input id="employeeID" placeholder="ID" type="text">
+          <input id="title" placeholder="Title" type="text">
+          <input id="salary" placeholder="Salary" type="text">
+        </form> 
+
+        <!-- set up table -->
+        <h2>Employees</h2>
+        <table>
+          <!-- Head -->
+          <thead>
+            <tr>
+              <td>First Name</td>
+              <td>Last Name</td>
+              <td>ID</td>
+              <td>Title</td>
+              <td>Annual Salary</td>
+              <td><!-- Delete Column --></td>
+            </tr>
+          </thead>
+
+          <!-- body-->
+          <tbody>
+            <tr>
+              <td>Tucker</td>
+              <td>Melssen</td>
+              <td>12345</td>
+              <td>King</td>
+              <td>1000000</td>
+            </tr>
+            <tr>
+              <td>Hmoov</td>
+              <td>Vang</td>
+              <td>67890</td>
+              <td>Peasant</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Dusty</td>
+              <td>Hagstrom</td>
+              <td>15234</td>
+              <td>Peasant</td>
+              <td>20</td>
+            </tr>
+
+
+          </tbody>
+        </table>
+    </main>
+    <footer>
+      <p>Total Monthly</p>
+    </footer>
+  </div>
 </body>
 </html>

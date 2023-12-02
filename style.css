@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+table {
+    border: 1px solid black;
+    margin: 0;
+    width: 50rem;
+    height: 20rem;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+tbody {
+    margin: 0;
+    padding: 0;
+}
+
+thead {
+    background-color: rgb(201, 201, 201);
+    margin: 0;
+    border-bottom: 3px solid black;
+}
+
+tr {
+    margin: 0;
+    width: 100%;
+}
+
+td {
+    margin: 0;
+    padding: 20px;
+    border: 1px solid black;
+    border-left: none;
+}
+
