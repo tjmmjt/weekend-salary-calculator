@@ -15,12 +15,16 @@
     <div class="container">
       <h2>Add Employee</h2>
         <!-- employee input form -->
-        <form action="">
-          <input id="firstName" placeholder="First Name" type="text">
-          <input id="lastName" placeholder="Last Name" type="text">
-          <input id="employeeID" placeholder="ID" type="text">
-          <input id="title" placeholder="Title" type="text">
-          <input id="salary" placeholder="Salary" type="text">
+        <form>
+          <input id="firstNameInput" data-testid="firstNameInput" placeholder="First Name" type="text">
+          <input id="lastNameInput" data-testid="lastNameInput" placeholder="Last Name" type="text">
+          <input id="idInput" data-testid="idInput" placeholder="ID" type="text">
+          <input id="titleInput" data-testid="titleInput" placeholder="Title" type="text">
+          <input id="annualSalaryInput" data-testid="annualSalaryInput" placeholder="Salary" type="text">
+          <!-- make button, onclick call employeeAppend(event) -->
+          <button data-testid="submitButton" onclick="employeeAppend(event)">
+            Submit
+          </button>
         </form> 
 
         <!-- set up table -->
@@ -46,6 +50,7 @@
               <td>12345</td>
               <td>King</td>
               <td>1000000</td>
+              <td><button>Delete</button></td>
             </tr>
             <tr>
               <td>Hmoov</td>
@@ -53,6 +58,7 @@
               <td>67890</td>
               <td>Peasant</td>
               <td>20</td>
+              <td><button>Delete</button></td>
             </tr>
             <tr>
               <td>Dusty</td>
@@ -60,9 +66,8 @@
               <td>15234</td>
               <td>Peasant</td>
               <td>20</td>
+              <td><button>Delete</button></td>
             </tr>
-
-
           </tbody>
         </table>
     </main>
