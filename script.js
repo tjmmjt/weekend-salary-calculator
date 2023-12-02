@@ -14,6 +14,7 @@ function employeeAppend(event) {
     let idInputToAppend = document.createElement('td')
     let titleInputToAppend = document.createElement('td')
     let annualSalaryInputToAppend = document.createElement('td')
+    let deleteButtonCell = document.createElement('td')
     // console.log(firstNameToAppend, lastNameToAppend,idInputToAppend, titleInputToAppend, annualSalaryInputToAppend);
 
     // declare variables and set equal to input.values
@@ -29,8 +30,16 @@ function employeeAppend(event) {
     lastNameToAppend.innerText = lastNameValue
     idInputToAppend.innerText = idInput
     titleInputToAppend.innerText = titleInput
-    annualSalaryInputToAppend.innerHTML = annualSalaryInput
+    annualSalaryInputToAppend.innerText = annualSalaryInput
     // console.log(firstNameToAppend, lastNameToAppend,idInputToAppend, titleInputToAppend, annualSalaryInputToAppend);
+    
+    // delete button
+    let deleteButton = document.createElement('button')
+    deleteButton.innerText = 'Delete'
+    deleteButtonCell.append(deleteButton)
+    deleteButton.setAttribute('onclick', 'deleteInfo(event)')
+    
+
     
     // append td's to tr (employeeToAppend)
     employeeToAppend.append(firstNameToAppend)
@@ -38,7 +47,23 @@ function employeeAppend(event) {
     employeeToAppend.append(idInputToAppend)
     employeeToAppend.append(titleInputToAppend)
     employeeToAppend.append(annualSalaryInputToAppend)
+    employeeToAppend.append(deleteButtonCell)
+
+
 
     // append tr to tbody
     tBody.append(employeeToAppend)
+
+
+    event.preventDefault()
 }
+
+ //Delete Row Of Employee Data
+ function deleteInfo(event) {
+    // Console log to find path to correct node of entire row data
+    console.log('test', event.target.parentNode.parentNode)
+    
+    event.target.parentNode.parentNode.remove();
+  
+    event.preventDefault()
+  }
