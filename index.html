@@ -10,9 +10,10 @@
   <header>
     <h1>Salary Calculator</h1>
   </header>
-  <main>
-    <!-- container for styling -->
+  <!-- container for styling -->
+  <div class="parent-container">
     <div class="container">
+    <main>
       <h2>Add Employee</h2>
         <!-- employee input form -->
         <form>
@@ -33,12 +34,12 @@
           <!-- Head -->
           <thead>
             <tr>
-              <td>First Name</td>
-              <td>Last Name</td>
-              <td>ID</td>
-              <td>Title</td>
-              <td>Annual Salary</td>
-              <td><!-- Delete Column --></td>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>ID</th>
+              <th>Title</th>
+              <th>Annual Salary</th>
+              <th><!-- Delete Column --></th>
             </tr>
           </thead>
 
@@ -72,8 +73,11 @@
         </table>
     </main>
     <footer>
-      <p>Total Monthly</p>
+      <span><b>Total Monthly:</b></span>
+      <span id="totalMonthly"></span>
+      <span id="overBudget"></span>
     </footer>
+    </div>
   </div>
 </body>
 </html>
