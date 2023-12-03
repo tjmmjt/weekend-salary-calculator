@@ -7,7 +7,7 @@ body {
 
 
 header {
-    background-color: gray;
+    background-color: rgb(100, 100, 100);
     text-align: center;
     color: white;
     margin: 0;
@@ -30,6 +30,7 @@ header {
 table {
     border: 1px solid black;
     margin: 0;
+    margin-bottom: 10px;
     width: 50rem;
     border-spacing: 0;
     border-collapse: collapse;
@@ -41,7 +42,8 @@ tbody {
 }
 
 thead {
-    background-color: rgb(201, 201, 201);
+    background-color: rgb(130, 130, 130);
+    color: white;
     margin: 0;
     border-bottom: 3px solid black;
 }
